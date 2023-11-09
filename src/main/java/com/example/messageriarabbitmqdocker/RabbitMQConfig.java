@@ -39,7 +39,7 @@ public class RabbitMQConfig {
 			Jackson2JsonMessageConverter messageConverter ) {
 		RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
 		rabbitTemplate.setMessageConverter(messageConverter);
-		return rabbitTemplate; // customizando meu template para converter Json
+		return rabbitTemplate; // customizando meu template para converter Json, contenty type = Json
 	}
 
 }
